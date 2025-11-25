@@ -8,6 +8,10 @@
         "sourceType": "module",
         "project": ["./tsconfig.eslint.json"],
         "tsconfigRootDir": "./"
+      },
+      "rules": {
+        "@typescript-eslint/consistent-type-definitions": "off",
+        "@typescript-eslint/no-namespace": "off"
       }
     }
   ]

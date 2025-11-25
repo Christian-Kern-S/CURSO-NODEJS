@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "test:staged": "npm test -- --findRelatedTests",
+    "test:staged": "npm test -- --findRelatedTests --passWithNoTests",
     "test:coverage": "npm test -- --coverage",
     "build": "rimraf dist && tsc -p tsconfig-build.json",
     "start": "node dist/main/api",
