@@ -1,8 +1,14 @@
 {
   "overrides": [
     {
-      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
-      "extends": "standard-with-typescript"
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx", "*.mjs"],
+      "extends": "standard-with-typescript",
+      "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "project": ["./tsconfig.eslint.json"],
+        "tsconfigRootDir": "./"
+      }
     }
   ]
 }
